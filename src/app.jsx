@@ -1,5 +1,4 @@
 import React,{useState,useEffect} from "react";
-import { MyComponent } from "./MyComponent";
 
 const App = () => {
 	const [count,setCount] = useState(0)	
@@ -8,15 +7,14 @@ const App = () => {
 	},[count])
 	
 	return (
-		<div id="app">
-			<h1>CREATING OWN REACT APP</h1>
-			<p>Something Out Here</p>
+		<div id="app" style={{textAlign:'center'}}>
+    <h1>Hello React + Webpack!</h1>
+			<h1>CREATING MY OWN REACT DEV ENVIRONMENT</h1>
 			<h2>{count}</h2>
 			<button onClick={(e)=>{
 				setCount(prev=>prev+1)
 			}}>Click Me</button>
 			<div>
-				<MyComponent/>
 			</div>
 		</div>
 	);
